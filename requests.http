@@ -1,0 +1,11 @@
+### Check if resurce is protected:
+GET http://localhost:8081/api/items
+
+
+### Option 1: get items using param:
+GET http://localhost:8081/api/items?api_key=thisIsSomePrivateApiKey
+
+
+### Option 2: get items using header
+GET http://localhost:8081/api/items
+X-API-Key: thisIsSomePrivateApiKey
